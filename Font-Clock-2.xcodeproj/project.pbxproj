@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2708C4BD1F50B6C100579F63 /* GalagaClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2708C4BC1F50B6C100579F63 /* GalagaClock.swift */; };
+		2708C4BF1F50B8A200579F63 /* uni0553-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2708C4BE1F50B8A200579F63 /* uni0553-webfont.ttf */; };
+		27710C161F50018300C33A6D /* Impact_Label.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27710C151F50018300C33A6D /* Impact_Label.ttf */; };
+		27AAEE7A1F51429100B8D526 /* GalagaImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AAEE791F51429100B8D526 /* GalagaImg.swift */; };
 		27D66A4C1F4F822300D287C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D66A4B1F4F822300D287C5 /* AppDelegate.swift */; };
 		27D66A4E1F4F822300D287C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D66A4D1F4F822300D287C5 /* ViewController.swift */; };
 		27D66A511F4F822300D287C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27D66A4F1F4F822300D287C5 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2708C4BC1F50B6C100579F63 /* GalagaClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalagaClock.swift; sourceTree = "<group>"; };
+		2708C4BE1F50B8A200579F63 /* uni0553-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "uni0553-webfont.ttf"; sourceTree = "<group>"; };
+		27710C151F50018300C33A6D /* Impact_Label.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Impact_Label.ttf; sourceTree = "<group>"; };
+		27AAEE791F51429100B8D526 /* GalagaImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalagaImg.swift; sourceTree = "<group>"; };
 		27D66A481F4F822300D287C5 /* Font-Clock-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Font-Clock-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D66A4B1F4F822300D287C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27D66A4D1F4F822300D287C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,9 +65,13 @@
 				27D66A4B1F4F822300D287C5 /* AppDelegate.swift */,
 				27D66A4D1F4F822300D287C5 /* ViewController.swift */,
 				27D66A4F1F4F822300D287C5 /* Main.storyboard */,
+				27AAEE791F51429100B8D526 /* GalagaImg.swift */,
+				2708C4BC1F50B6C100579F63 /* GalagaClock.swift */,
 				27D66A521F4F822300D287C5 /* Assets.xcassets */,
 				27D66A541F4F822300D287C5 /* LaunchScreen.storyboard */,
 				27D66A571F4F822300D287C5 /* Info.plist */,
+				2708C4BE1F50B8A200579F63 /* uni0553-webfont.ttf */,
+				27710C151F50018300C33A6D /* Impact_Label.ttf */,
 			);
 			path = "Font-Clock-2";
 			sourceTree = "<group>";
@@ -123,7 +135,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2708C4BF1F50B8A200579F63 /* uni0553-webfont.ttf in Resources */,
 				27D66A561F4F822300D287C5 /* LaunchScreen.storyboard in Resources */,
+				27710C161F50018300C33A6D /* Impact_Label.ttf in Resources */,
 				27D66A531F4F822300D287C5 /* Assets.xcassets in Resources */,
 				27D66A511F4F822300D287C5 /* Main.storyboard in Resources */,
 			);
@@ -136,6 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27AAEE7A1F51429100B8D526 /* GalagaImg.swift in Sources */,
+				2708C4BD1F50B6C100579F63 /* GalagaClock.swift in Sources */,
 				27D66A4E1F4F822300D287C5 /* ViewController.swift in Sources */,
 				27D66A4C1F4F822300D287C5 /* AppDelegate.swift in Sources */,
 			);
@@ -299,6 +315,7 @@
 				27D66A5C1F4F822300D287C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

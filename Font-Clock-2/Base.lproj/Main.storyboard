@@ -1,26 +1,161 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Impact_Label.ttf">
+            <string>ImpactLabel</string>
+        </array>
+        <array key="uni0553-webfont.ttf">
+            <string>Uni0553</string>
+        </array>
+    </customFonts>
     <scenes>
+        <!--Galaga Clock-->
+        <scene sceneID="cz2-dV-0zE">
+            <objects>
+                <viewController id="eee-o8-rOI" customClass="GalagaClock" customModule="Font_Clock_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Okc-gO-NbV"/>
+                        <viewControllerLayoutGuide type="bottom" id="OGb-H4-A1g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yGL-DN-NdJ">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galaga1" translatesAutoresizingMaskIntoConstraints="NO" id="Jze-VH-4R8" customClass="GalagaImg" customModule="Font_Clock_2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1Ba-wQ-8ll">
+                                <rect key="frame" x="95" y="80" width="477" height="220"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00 pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhc-cJ-J0D">
+                                        <rect key="frame" x="0.0" y="0.0" width="477" height="130"/>
+                                        <fontDescription key="fontDescription" name="Uni0553" family="uni 05_53" pointSize="93"/>
+                                        <color key="textColor" red="0.74901960784313726" green="0.67450980392156867" blue="0.23921568627450981" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thu Aug 25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlO-Nb-Dby">
+                                        <rect key="frame" x="38.5" y="130" width="400" height="89.5"/>
+                                        <fontDescription key="fontDescription" name="Uni0553" family="uni 05_53" pointSize="64"/>
+                                        <color key="textColor" red="0.082352941176470587" green="0.63137254901960782" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jze-VH-4R8" firstAttribute="top" secondItem="yGL-DN-NdJ" secondAttribute="top" id="9XK-9i-ok8"/>
+                            <constraint firstAttribute="trailing" secondItem="Jze-VH-4R8" secondAttribute="trailing" id="Vqs-Go-1y1"/>
+                            <constraint firstItem="Jze-VH-4R8" firstAttribute="leading" secondItem="yGL-DN-NdJ" secondAttribute="leading" id="YPF-VI-ubz"/>
+                            <constraint firstItem="OGb-H4-A1g" firstAttribute="top" secondItem="Jze-VH-4R8" secondAttribute="bottom" id="l0T-GO-C9U"/>
+                            <constraint firstItem="1Ba-wQ-8ll" firstAttribute="centerX" secondItem="yGL-DN-NdJ" secondAttribute="centerX" id="nE0-XF-Vkd"/>
+                            <constraint firstItem="1Ba-wQ-8ll" firstAttribute="centerY" secondItem="yGL-DN-NdJ" secondAttribute="centerY" id="xt7-pZ-vqE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateFace" destination="mlO-Nb-Dby" id="GFd-Ti-A7v"/>
+                        <outlet property="galagaImg" destination="Jze-VH-4R8" id="gxi-XR-1UA"/>
+                        <outlet property="timeFace" destination="xhc-cJ-J0D" id="pRD-jk-m98"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9O-iJ-0NZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="314.39280359820094" y="-943.20000000000005"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="A5F-TT-PSW">
+            <objects>
+                <viewController id="IDb-4I-k0B" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sDi-PI-Amk"/>
+                        <viewControllerLayoutGuide type="bottom" id="MPL-Um-KjJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gpf-rY-pSn">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="peH-Gw-ITz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014" y="-922"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Font_Clock_2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="british-style-black-elephant-tolex-7312500" translatesAutoresizingMaskIntoConstraints="NO" id="Qhc-pJ-Mdg">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Zwi-ro-pKf">
+                                <rect key="frame" x="25" y="68" width="617" height="197"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00 pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnD-Gj-gUm">
+                                        <rect key="frame" x="0.0" y="0.0" width="616.5" height="129"/>
+                                        <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="ImpactLabel" family="Impact Label" pointSize="128"/>
+                                        <color key="textColor" red="0.0" green="0.039789870689655171" blue="0.073248922413793105" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thu Aug 2017" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azh-7C-rdX">
+                                        <rect key="frame" x="136" y="149" width="344.5" height="48"/>
+                                        <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="ImpactLabel" family="Impact Label" pointSize="48"/>
+                                        <color key="textColor" red="0.0" green="0.039215686274509803" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tln-QU-yKi">
+                                <rect key="frame" x="578" y="295" width="89" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="next_menu_btn"/>
+                                <connections>
+                                    <segue destination="eee-o8-rOI" kind="show" id="nCh-bm-iHs"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qhc-pJ-Mdg" secondAttribute="bottom" id="00j-5k-35t"/>
+                            <constraint firstItem="Qhc-pJ-Mdg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="M8N-rH-pqm"/>
+                            <constraint firstItem="Qhc-pJ-Mdg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="P8g-fw-hyo"/>
+                            <constraint firstItem="Zwi-ro-pKf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fj0-Xf-HIG"/>
+                            <constraint firstItem="Zwi-ro-pKf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="prx-cS-Myw"/>
+                            <constraint firstAttribute="trailing" secondItem="Qhc-pJ-Mdg" secondAttribute="trailing" id="xkW-gl-pLT"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateFace" destination="Azh-7C-rdX" id="aPz-7U-Ndv"/>
+                        <outlet property="timeFace" destination="hnD-Gj-gUm" id="II1-qF-jZa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="162" y="98"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="british-style-black-elephant-tolex-7312500" width="500" height="500"/>
+        <image name="galaga1" width="900" height="573"/>
+        <image name="next_menu_btn" width="35" height="60"/>
+    </resources>
 </document>

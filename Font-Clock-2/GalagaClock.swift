@@ -1,29 +1,31 @@
 //
-//  ViewController.swift
+//  GalagaClock.swift
 //  Font-Clock-2
 //
-//  Created by Jacob Fox on 2017-08-24.
+//  Created by Jacob Fox on 2017-08-25.
 //  Copyright © 2017 Jacob Fox. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
-    
+class GalagaClock: UIViewController {
+
     var timer: Timer!
     var dateTimer: Timer!
     var dateString: NSString!
+  
     @IBOutlet weak var timeFace: UILabel!
+    
     @IBOutlet weak var dateFace: UILabel!
-
+    @IBOutlet weak var galagaImg: GalagaImg!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         setTimeFace()
         setDateFace()
-
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -39,8 +41,8 @@ class ViewController: UIViewController {
         
         
     }
-
-
+    
+    
     func setDateFace() {
         dateTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.setDateFace), userInfo: nil, repeats: false)
         let date: NSDate = NSDate()
@@ -51,7 +53,6 @@ class ViewController: UIViewController {
         
         
     }
-
-
+    
+    
 }
-
