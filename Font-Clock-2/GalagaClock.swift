@@ -14,21 +14,18 @@ class GalagaClock: UIViewController {
     var dateTimer: Timer!
     var dateString: NSString!
   
-    @IBOutlet weak var timeFace: UILabel!
+    @IBOutlet weak var timeFace: GlowLabel!
     
-    @IBOutlet weak var dateFace: UILabel!
+    @IBOutlet weak var dateFace: GlowLabel!
     @IBOutlet weak var galagaImg: GalagaImg!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        galagaImg.alpha = 0.8
+        timeFace.glowYellow()
+        dateFace.glowBlue()
         setTimeFace()
         setDateFace()
         
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func setTimeFace() {
@@ -38,8 +35,6 @@ class GalagaClock: UIViewController {
         dateFormatter.dateFormat = "h:mm a"
         dateString = dateFormatter.string(from: date as Date) as NSString!
         timeFace.text = dateString as String
-        
-        
     }
     
     
@@ -50,7 +45,6 @@ class GalagaClock: UIViewController {
         dateFormatter.dateFormat = "EEE MMM dd yyyy"
         dateString = dateFormatter.string(from: date as Date) as NSString!
         dateFace.text = dateString as String
-        
         
     }
     

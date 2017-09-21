@@ -23,7 +23,6 @@ class GalagaImg: UIImageView {
     func playBckgrndAnimation() {
         
         self.image = UIImage(named: "galaga1.pn")
-        
         self.animationImages = nil
         
         var imgArray = [UIImage]()
@@ -31,6 +30,7 @@ class GalagaImg: UIImageView {
         for x in 1...10 {
             let img = UIImage(named: "galaga\(x).png")
             imgArray.append(img!)
+
         }
         
         self.animationImages = imgArray
