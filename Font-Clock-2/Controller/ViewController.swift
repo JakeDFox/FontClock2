@@ -18,15 +18,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        UIApplication.shared.isIdleTimerDisabled = true
         setTimeFace()
         setDateFace()
 
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func setTimeFace() {
@@ -36,8 +31,7 @@ class ViewController: UIViewController {
         dateFormatter.dateFormat = "h:mm a"
         dateString = dateFormatter.string(from: date as Date) as NSString!
         timeFace.text = dateString as String
-        
-        
+
     }
 
 
@@ -48,10 +42,6 @@ class ViewController: UIViewController {
         dateFormatter.dateFormat = "EEE MMM dd yyyy"
         dateString = dateFormatter.string(from: date as Date) as NSString!
         dateFace.text = dateString as String
-        
-        
     }
-
-
 }
 

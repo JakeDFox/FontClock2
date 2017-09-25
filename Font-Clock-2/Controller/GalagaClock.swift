@@ -9,7 +9,6 @@
 import UIKit
 
 class GalagaClock: UIViewController {
-
     var timer: Timer!
     var dateTimer: Timer!
     var dateString: NSString!
@@ -20,6 +19,7 @@ class GalagaClock: UIViewController {
     @IBOutlet weak var galagaImg: GalagaImg!
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIApplication.shared.isIdleTimerDisabled = true
         galagaImg.alpha = 0.8
         timeFace.glowYellow()
         dateFace.glowBlue()

@@ -47,6 +47,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		272E89631F7611E8001D4BF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27AAEE791F51429100B8D526 /* GalagaImg.swift */,
+				27E7866B1F7227D900B312E1 /* GlowLabel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		272E89641F7611F2001D4BF4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27D66A4F1F4F822300D287C5 /* Main.storyboard */,
+				27D66A541F4F822300D287C5 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		272E89651F7611F9001D4BF4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				27D66A4D1F4F822300D287C5 /* ViewController.swift */,
+				27C84F5A1F5A2DBB00AA382B /* NixieVC.swift */,
+				2708C4BC1F50B6C100579F63 /* GalagaClock.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		27D66A3F1F4F822300D287C5 = {
 			isa = PBXGroup;
 			children = (
@@ -66,16 +94,12 @@
 		27D66A4A1F4F822300D287C5 /* Font-Clock-2 */ = {
 			isa = PBXGroup;
 			children = (
+				272E89651F7611F9001D4BF4 /* Controller */,
+				272E89641F7611F2001D4BF4 /* View */,
+				272E89631F7611E8001D4BF4 /* Model */,
 				27D66A4B1F4F822300D287C5 /* AppDelegate.swift */,
-				27D66A4D1F4F822300D287C5 /* ViewController.swift */,
-				27D66A4F1F4F822300D287C5 /* Main.storyboard */,
-				27AAEE791F51429100B8D526 /* GalagaImg.swift */,
-				27C84F5A1F5A2DBB00AA382B /* NixieVC.swift */,
-				2708C4BC1F50B6C100579F63 /* GalagaClock.swift */,
-				27E7866B1F7227D900B312E1 /* GlowLabel.swift */,
 				27D66A521F4F822300D287C5 /* Assets.xcassets */,
 				2708C4BE1F50B8A200579F63 /* uni0553-webfont.ttf */,
-				27D66A541F4F822300D287C5 /* LaunchScreen.storyboard */,
 				27D66A571F4F822300D287C5 /* Info.plist */,
 				27710C151F50018300C33A6D /* Impact_Label.ttf */,
 			);
