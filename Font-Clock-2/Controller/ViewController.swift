@@ -43,5 +43,13 @@ class ViewController: UIViewController {
         dateString = dateFormatter.string(from: date as Date) as NSString!
         dateFace.text = dateString as String
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toSettingsFromRocker" {
+            if let settingsVC = segue.destination as? SettingsVC {
+                settingsVC.setDefault = "Set Rocker Clock as Default"
+            }
+        }
+    }
 }
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2708C4BD1F50B6C100579F63 /* GalagaClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2708C4BC1F50B6C100579F63 /* GalagaClock.swift */; };
 		2708C4BF1F50B8A200579F63 /* uni0553-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2708C4BE1F50B8A200579F63 /* uni0553-webfont.ttf */; };
+		2714CBFE1F7C2D41001044CE /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2714CBFD1F7C2D41001044CE /* SettingsVC.swift */; };
 		27710C161F50018300C33A6D /* Impact_Label.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27710C151F50018300C33A6D /* Impact_Label.ttf */; };
 		27AAEE7A1F51429100B8D526 /* GalagaImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AAEE791F51429100B8D526 /* GalagaImg.swift */; };
 		27C84F5B1F5A2DBB00AA382B /* NixieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C84F5A1F5A2DBB00AA382B /* NixieVC.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		2708C4BC1F50B6C100579F63 /* GalagaClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalagaClock.swift; sourceTree = "<group>"; };
 		2708C4BE1F50B8A200579F63 /* uni0553-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "uni0553-webfont.ttf"; sourceTree = "<group>"; };
+		2714CBFD1F7C2D41001044CE /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		27710C151F50018300C33A6D /* Impact_Label.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Impact_Label.ttf; sourceTree = "<group>"; };
 		27AAEE791F51429100B8D526 /* GalagaImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalagaImg.swift; sourceTree = "<group>"; };
 		27C84F5A1F5A2DBB00AA382B /* NixieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NixieVC.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				27D66A4D1F4F822300D287C5 /* ViewController.swift */,
 				27C84F5A1F5A2DBB00AA382B /* NixieVC.swift */,
 				2708C4BC1F50B6C100579F63 /* GalagaClock.swift */,
+				2714CBFD1F7C2D41001044CE /* SettingsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				27C84F5B1F5A2DBB00AA382B /* NixieVC.swift in Sources */,
 				27D66A4E1F4F822300D287C5 /* ViewController.swift in Sources */,
 				27D66A4C1F4F822300D287C5 /* AppDelegate.swift in Sources */,
+				2714CBFE1F7C2D41001044CE /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
