@@ -28,6 +28,10 @@
 	<array>
 		<string>uni0553-webfont.ttf</string>
 		<string>Impact_Label.ttf</string>
+		<string>Sailor-Scrawl-Black.ttf</string>
+		<string>Sailor-Scrawl-Fancy.ttf</string>
+		<string>Sailor-Scrawl.ttf</string>
+		<string>green_fuz.otf</string>
 	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>

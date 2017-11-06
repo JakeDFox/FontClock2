@@ -15,6 +15,15 @@
         <array key="Impact_Label.ttf">
             <string>ImpactLabel</string>
         </array>
+        <array key="Sailor-Scrawl-Fancy.ttf">
+            <string>Sailor-Scrawl-Fancy</string>
+        </array>
+        <array key="Sailor-Scrawl.ttf">
+            <string>Sailor-Scrawl</string>
+        </array>
+        <array key="green_fuz.otf">
+            <string>GreenFuz-Regular</string>
+        </array>
         <array key="uni0553-webfont.ttf">
             <string>Uni0553</string>
         </array>
@@ -56,6 +65,9 @@
                                 <rect key="frame" x="580" y="295" width="89" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icons8-Right Filled-50 white"/>
+                                <connections>
+                                    <segue destination="AEN-nR-HL2" kind="show" id="nqU-Rp-MvO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.40000000596046448" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kw6-rh-i5d">
                                 <rect key="frame" x="-2" y="295" width="89" height="60"/>
@@ -88,6 +100,99 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d9O-iJ-0NZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="314.39280359820094" y="-943.20000000000005"/>
+        </scene>
+        <!--MonsterVC-->
+        <scene sceneID="5DC-Vm-G6R">
+            <objects>
+                <viewController id="AEN-nR-HL2" customClass="MonsterVC" customModule="Font_Clock_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0ce-Pk-GOA"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Wx-Pk-HZS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WU8-5c-vIp">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vmq-1a-uhu">
+                                <rect key="frame" x="47" y="67" width="573.5" height="240"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPL-jV-l5V">
+                                        <rect key="frame" x="0.0" y="0.0" width="573.5" height="153.5"/>
+                                        <fontDescription key="fontDescription" name="GreenFuz-Regular" family="Green Fuz" pointSize="128"/>
+                                        <color key="textColor" red="0.15385109186172485" green="0.91065484285354614" blue="0.046289101243019104" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday Nov 20th" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2b-LL-aE7">
+                                        <rect key="frame" x="0.0" y="153.5" width="573.5" height="86.5"/>
+                                        <fontDescription key="fontDescription" name="GreenFuz-Regular" family="Green Fuz" pointSize="72"/>
+                                        <color key="textColor" red="0.71624022722244263" green="0.37724786996841431" blue="0.084384240210056305" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.015811048448085785" green="0.011896423995494843" blue="0.0035513828042894602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vmq-1a-uhu" firstAttribute="centerX" secondItem="WU8-5c-vIp" secondAttribute="centerX" id="Fa8-Qz-KPG"/>
+                            <constraint firstItem="vmq-1a-uhu" firstAttribute="centerY" secondItem="WU8-5c-vIp" secondAttribute="centerY" id="gwF-6j-PC1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateFace" destination="M2b-LL-aE7" id="QL5-rv-q4Z"/>
+                        <outlet property="timeFace" destination="wPL-jV-l5V" id="usx-zM-yDU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lVp-uy-nBW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="-1770"/>
+        </scene>
+        <!--Body ArtVC-->
+        <scene sceneID="XqW-Rp-DNg">
+            <objects>
+                <viewController id="0lT-mN-1M2" customClass="BodyArtVC" customModule="Font_Clock_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c5z-G7-GGU"/>
+                        <viewControllerLayoutGuide type="bottom" id="k1E-p2-A2B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jAB-mr-Kef">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZ3-U6-9Rd">
+                                <rect key="frame" x="0.0" y="66" width="667" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="122" id="iNt-d9-8vT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Sailor-Scrawl-Fancy" family="Sailor Scrawl Fancy" pointSize="116"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gk-CN-Vux">
+                                <rect key="frame" x="0.0" y="214" width="667" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="8rS-Lh-Xqv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Sailor-Scrawl" family="Sailor Scrawl" pointSize="83"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96213012933731079" green="0.91056090593338013" blue="0.85585987567901611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RZ3-U6-9Rd" firstAttribute="leading" secondItem="jAB-mr-Kef" secondAttribute="leading" id="PDs-bg-mam"/>
+                            <constraint firstItem="7Gk-CN-Vux" firstAttribute="leading" secondItem="jAB-mr-Kef" secondAttribute="leading" id="ZWx-yp-r3U"/>
+                            <constraint firstAttribute="trailing" secondItem="RZ3-U6-9Rd" secondAttribute="trailing" id="hBS-uC-Ypi"/>
+                            <constraint firstAttribute="trailing" secondItem="7Gk-CN-Vux" secondAttribute="trailing" id="yCp-Il-3JJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateFace" destination="7Gk-CN-Vux" id="IwA-Jn-tCc"/>
+                        <outlet property="timeFace" destination="RZ3-U6-9Rd" id="SDi-7F-tEZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JEf-tI-bMV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="-2892"/>
         </scene>
         <!--NixieVC-->
         <scene sceneID="A5F-TT-PSW">

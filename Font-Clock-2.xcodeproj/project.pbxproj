@@ -10,6 +10,9 @@
 		2708C4BD1F50B6C100579F63 /* GalagaClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2708C4BC1F50B6C100579F63 /* GalagaClock.swift */; };
 		2708C4BF1F50B8A200579F63 /* uni0553-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2708C4BE1F50B8A200579F63 /* uni0553-webfont.ttf */; };
 		2714CBFE1F7C2D41001044CE /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2714CBFD1F7C2D41001044CE /* SettingsVC.swift */; };
+		2752B7C21FA430C500965930 /* Sailor-Scrawl-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2752B7BE1FA42D3E00965930 /* Sailor-Scrawl-Black.ttf */; };
+		2752B7C31FA430C700965930 /* Sailor-Scrawl-Fancy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2752B7BF1FA42D3F00965930 /* Sailor-Scrawl-Fancy.ttf */; };
+		2752B7C41FA430CA00965930 /* Sailor-Scrawl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2752B7BD1FA42D3D00965930 /* Sailor-Scrawl.ttf */; };
 		27710C161F50018300C33A6D /* Impact_Label.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27710C151F50018300C33A6D /* Impact_Label.ttf */; };
 		27AAEE7A1F51429100B8D526 /* GalagaImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AAEE791F51429100B8D526 /* GalagaImg.swift */; };
 		27C84F5B1F5A2DBB00AA382B /* NixieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C84F5A1F5A2DBB00AA382B /* NixieVC.swift */; };
@@ -19,12 +22,18 @@
 		27D66A531F4F822300D287C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D66A521F4F822300D287C5 /* Assets.xcassets */; };
 		27D66A561F4F822300D287C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27D66A541F4F822300D287C5 /* LaunchScreen.storyboard */; };
 		27E7866C1F7227D900B312E1 /* GlowLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7866B1F7227D900B312E1 /* GlowLabel.swift */; };
+		27FCB5171FB045AD00002FF6 /* BodyArtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FCB5161FB045AD00002FF6 /* BodyArtVC.swift */; };
+		27FCB51C1FB04A4100002FF6 /* MonsterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FCB51B1FB04A4100002FF6 /* MonsterVC.swift */; };
+		27FCB51D1FB04BE400002FF6 /* green_fuz.otf in Resources */ = {isa = PBXBuildFile; fileRef = 27FCB5191FB0485600002FF6 /* green_fuz.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2708C4BC1F50B6C100579F63 /* GalagaClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalagaClock.swift; sourceTree = "<group>"; };
 		2708C4BE1F50B8A200579F63 /* uni0553-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "uni0553-webfont.ttf"; sourceTree = "<group>"; };
 		2714CBFD1F7C2D41001044CE /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		2752B7BD1FA42D3D00965930 /* Sailor-Scrawl.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sailor-Scrawl.ttf"; sourceTree = "<group>"; };
+		2752B7BE1FA42D3E00965930 /* Sailor-Scrawl-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sailor-Scrawl-Black.ttf"; sourceTree = "<group>"; };
+		2752B7BF1FA42D3F00965930 /* Sailor-Scrawl-Fancy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sailor-Scrawl-Fancy.ttf"; sourceTree = "<group>"; };
 		27710C151F50018300C33A6D /* Impact_Label.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Impact_Label.ttf; sourceTree = "<group>"; };
 		27AAEE791F51429100B8D526 /* GalagaImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalagaImg.swift; sourceTree = "<group>"; };
 		27C84F5A1F5A2DBB00AA382B /* NixieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NixieVC.swift; sourceTree = "<group>"; };
@@ -36,6 +45,11 @@
 		27D66A551F4F822300D287C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27D66A571F4F822300D287C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27E7866B1F7227D900B312E1 /* GlowLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowLabel.swift; sourceTree = "<group>"; };
+		27FCB5161FB045AD00002FF6 /* BodyArtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyArtVC.swift; sourceTree = "<group>"; };
+		27FCB5181FB0484400002FF6 /* heavy_data.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = heavy_data.ttf; sourceTree = "<group>"; };
+		27FCB5191FB0485600002FF6 /* green_fuz.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = green_fuz.otf; sourceTree = "<group>"; };
+		27FCB51A1FB0489600002FF6 /* Amatic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amatic-Bold.ttf"; sourceTree = "<group>"; };
+		27FCB51B1FB04A4100002FF6 /* MonsterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +84,12 @@
 		272E89651F7611F9001D4BF4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				27FCB5161FB045AD00002FF6 /* BodyArtVC.swift */,
 				27D66A4D1F4F822300D287C5 /* ViewController.swift */,
 				27C84F5A1F5A2DBB00AA382B /* NixieVC.swift */,
 				2708C4BC1F50B6C100579F63 /* GalagaClock.swift */,
 				2714CBFD1F7C2D41001044CE /* SettingsVC.swift */,
+				27FCB51B1FB04A4100002FF6 /* MonsterVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -105,6 +121,12 @@
 				2708C4BE1F50B8A200579F63 /* uni0553-webfont.ttf */,
 				27D66A571F4F822300D287C5 /* Info.plist */,
 				27710C151F50018300C33A6D /* Impact_Label.ttf */,
+				2752B7BE1FA42D3E00965930 /* Sailor-Scrawl-Black.ttf */,
+				2752B7BF1FA42D3F00965930 /* Sailor-Scrawl-Fancy.ttf */,
+				2752B7BD1FA42D3D00965930 /* Sailor-Scrawl.ttf */,
+				27FCB5181FB0484400002FF6 /* heavy_data.ttf */,
+				27FCB5191FB0485600002FF6 /* green_fuz.otf */,
+				27FCB51A1FB0489600002FF6 /* Amatic-Bold.ttf */,
 			);
 			path = "Font-Clock-2";
 			sourceTree = "<group>";
@@ -169,8 +191,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27FCB51D1FB04BE400002FF6 /* green_fuz.otf in Resources */,
+				2752B7C41FA430CA00965930 /* Sailor-Scrawl.ttf in Resources */,
+				2752B7C31FA430C700965930 /* Sailor-Scrawl-Fancy.ttf in Resources */,
 				2708C4BF1F50B8A200579F63 /* uni0553-webfont.ttf in Resources */,
 				27D66A561F4F822300D287C5 /* LaunchScreen.storyboard in Resources */,
+				2752B7C21FA430C500965930 /* Sailor-Scrawl-Black.ttf in Resources */,
 				27710C161F50018300C33A6D /* Impact_Label.ttf in Resources */,
 				27D66A531F4F822300D287C5 /* Assets.xcassets in Resources */,
 				27D66A511F4F822300D287C5 /* Main.storyboard in Resources */,
@@ -184,6 +210,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27FCB51C1FB04A4100002FF6 /* MonsterVC.swift in Sources */,
+				27FCB5171FB045AD00002FF6 /* BodyArtVC.swift in Sources */,
 				27AAEE7A1F51429100B8D526 /* GalagaImg.swift in Sources */,
 				27E7866C1F7227D900B312E1 /* GlowLabel.swift in Sources */,
 				2708C4BD1F50B6C100579F63 /* GalagaClock.swift in Sources */,
