@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -66,7 +66,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icons8-Right Filled-50 white"/>
                                 <connections>
-                                    <segue destination="AEN-nR-HL2" kind="show" id="nqU-Rp-MvO"/>
+                                    <segue destination="AEN-nR-HL2" kind="show" id="0ya-6a-eNX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.40000000596046448" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kw6-rh-i5d">
@@ -99,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d9O-iJ-0NZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="314.39280359820094" y="-943.20000000000005"/>
+            <point key="canvasLocation" x="801" y="-1014"/>
         </scene>
         <!--MonsterVC-->
         <scene sceneID="5DC-Vm-G6R">
@@ -113,16 +113,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Large_0260782" translatesAutoresizingMaskIntoConstraints="NO" id="vlt-h3-lDe">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vmq-1a-uhu">
-                                <rect key="frame" x="47" y="67" width="573.5" height="240"/>
+                                <rect key="frame" x="47" y="67.5" width="573.5" height="240"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPL-jV-l5V">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPL-jV-l5V" customClass="GlowLabel" customModule="Font_Clock_2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="573.5" height="153.5"/>
                                         <fontDescription key="fontDescription" name="GreenFuz-Regular" family="Green Fuz" pointSize="128"/>
                                         <color key="textColor" red="0.15385109186172485" green="0.91065484285354614" blue="0.046289101243019104" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday Nov 20th" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2b-LL-aE7">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday Nov 20th" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2b-LL-aE7" customClass="GlowLabel" customModule="Font_Clock_2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="153.5" width="573.5" height="86.5"/>
                                         <fontDescription key="fontDescription" name="GreenFuz-Regular" family="Green Fuz" pointSize="72"/>
                                         <color key="textColor" red="0.71624022722244263" green="0.37724786996841431" blue="0.084384240210056305" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -130,6 +134,25 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acp-X9-FX0">
+                                <rect key="frame" x="558" y="295" width="89" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icons8-Right Filled-50 white"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="5bE-9T-C2w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.40000000596046448" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Fz-I0-Mog">
+                                <rect key="frame" x="0.0" y="295" width="89" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" image="icons8-Left Filled-50 white">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eee-o8-rOI" kind="show" id="6q1-wL-Udi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.015811048448085785" green="0.011896423995494843" blue="0.0035513828042894602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -144,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lVp-uy-nBW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10" y="-1770"/>
+            <point key="canvasLocation" x="9.4452773613193415" y="-1770.4000000000001"/>
         </scene>
         <!--Body ArtVC-->
         <scene sceneID="XqW-Rp-DNg">
@@ -159,16 +182,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZ3-U6-9Rd">
-                                <rect key="frame" x="0.0" y="66" width="667" height="122"/>
+                                <rect key="frame" x="0.0" y="34" width="667" height="153"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="122" id="iNt-d9-8vT"/>
+                                    <constraint firstAttribute="height" constant="152.5" id="aKV-jU-qqO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Sailor-Scrawl-Fancy" family="Sailor Scrawl Fancy" pointSize="116"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gk-CN-Vux">
-                                <rect key="frame" x="0.0" y="214" width="667" height="79"/>
+                                <rect key="frame" x="0.0" y="213" width="667" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="79" id="8rS-Lh-Xqv"/>
                                 </constraints>
@@ -179,10 +202,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.96213012933731079" green="0.91056090593338013" blue="0.85585987567901611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="RZ3-U6-9Rd" firstAttribute="leading" secondItem="jAB-mr-Kef" secondAttribute="leading" id="PDs-bg-mam"/>
-                            <constraint firstItem="7Gk-CN-Vux" firstAttribute="leading" secondItem="jAB-mr-Kef" secondAttribute="leading" id="ZWx-yp-r3U"/>
-                            <constraint firstAttribute="trailing" secondItem="RZ3-U6-9Rd" secondAttribute="trailing" id="hBS-uC-Ypi"/>
-                            <constraint firstAttribute="trailing" secondItem="7Gk-CN-Vux" secondAttribute="trailing" id="yCp-Il-3JJ"/>
+                            <constraint firstItem="RZ3-U6-9Rd" firstAttribute="leading" secondItem="jAB-mr-Kef" secondAttribute="leading" id="s9u-mj-Qm8"/>
+                            <constraint firstAttribute="trailing" secondItem="RZ3-U6-9Rd" secondAttribute="trailing" id="xsb-9g-C7w"/>
                         </constraints>
                     </view>
                     <connections>
@@ -192,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEf-tI-bMV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857" y="-2892"/>
+            <point key="canvasLocation" x="856.82158920539734" y="-2892"/>
         </scene>
         <!--NixieVC-->
         <scene sceneID="A5F-TT-PSW">
@@ -283,7 +304,7 @@
                                     <segue destination="eee-o8-rOI" kind="show" id="nCh-bm-iHs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEk-u1-Ndz">
+                            <button hidden="YES" opaque="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEk-u1-Ndz">
                                 <rect key="frame" x="315" y="316" width="36" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
@@ -294,7 +315,7 @@
                                     <segue destination="2QV-Vu-MLA" kind="show" identifier="toSettingsFromRocker" id="R3V-Bq-SdK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgU-qa-ZIg">
+                            <button hidden="YES" opaque="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgU-qa-ZIg">
                                 <rect key="frame" x="315" y="20" width="36" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
@@ -306,6 +327,9 @@
                                 <rect key="frame" x="0.0" y="305" width="89" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icons8-Left Filled-50 white"/>
+                                <connections>
+                                    <segue destination="AEN-nR-HL2" kind="show" id="wat-xZ-Ooq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -496,7 +520,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eub-au-ZgR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-849" y="868"/>
+            <point key="canvasLocation" x="-443" y="703"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="c3r-IR-ylO">
@@ -1001,6 +1025,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Large_0260782" width="700" height="700"/>
         <image name="british-style-black-elephant-tolex-7312500" width="500" height="500"/>
         <image name="galaga1" width="900" height="573"/>
         <image name="icons8-Left Filled-50 white" width="50" height="50"/>
@@ -1012,5 +1037,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="xTg-xQ-fqS"/>
+        <segue reference="5bE-9T-C2w"/>
+        <segue reference="wat-xZ-Ooq"/>
+        <segue reference="nCh-bm-iHs"/>
     </inferredMetricsTieBreakers>
 </document>

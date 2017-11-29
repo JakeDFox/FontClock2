@@ -12,12 +12,14 @@ class MonsterVC: UIViewController {
         var timer: Timer!
         var dateTimer: Timer!
         var dateString: NSString!
-        @IBOutlet weak var timeFace: UILabel!
-        @IBOutlet weak var dateFace: UILabel!
+        @IBOutlet weak var timeFace: GlowLabel!
+        @IBOutlet weak var dateFace: GlowLabel!
         
         override func viewDidLoad() {
             super.viewDidLoad()
             UIApplication.shared.isIdleTimerDisabled = true
+            timeFace.glowWhite()
+            dateFace.glowWhite()
             setTimeFace()
             setDateFace()
             
@@ -44,9 +46,9 @@ class MonsterVC: UIViewController {
         }
         
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "toSettingsFromRocker" {
+            if segue.identifier == "toSettingsFromMonster" {
                 if let settingsVC = segue.destination as? SettingsVC {
-                    settingsVC.setDefault = "Set Rocker Clock as Default"
+                    settingsVC.setDefault = "Set Monster Clock as Default"
                 }
             }
         }

@@ -21,12 +21,7 @@ class NixieVC: UIViewController {
       /*  setDateFace() */
         
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+
     func setTimeFace() {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.setTimeFace), userInfo: nil, repeats: false)
         let date: NSDate = NSDate()

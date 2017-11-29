@@ -14,6 +14,7 @@
 		2752B7C31FA430C700965930 /* Sailor-Scrawl-Fancy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2752B7BF1FA42D3F00965930 /* Sailor-Scrawl-Fancy.ttf */; };
 		2752B7C41FA430CA00965930 /* Sailor-Scrawl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2752B7BD1FA42D3D00965930 /* Sailor-Scrawl.ttf */; };
 		27710C161F50018300C33A6D /* Impact_Label.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27710C151F50018300C33A6D /* Impact_Label.ttf */; };
+		2792E92B1FB120110068D490 /* numtowordsconvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2792E92A1FB120110068D490 /* numtowordsconvert.swift */; };
 		27AAEE7A1F51429100B8D526 /* GalagaImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AAEE791F51429100B8D526 /* GalagaImg.swift */; };
 		27C84F5B1F5A2DBB00AA382B /* NixieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C84F5A1F5A2DBB00AA382B /* NixieVC.swift */; };
 		27D66A4C1F4F822300D287C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D66A4B1F4F822300D287C5 /* AppDelegate.swift */; };
@@ -35,6 +36,7 @@
 		2752B7BE1FA42D3E00965930 /* Sailor-Scrawl-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sailor-Scrawl-Black.ttf"; sourceTree = "<group>"; };
 		2752B7BF1FA42D3F00965930 /* Sailor-Scrawl-Fancy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sailor-Scrawl-Fancy.ttf"; sourceTree = "<group>"; };
 		27710C151F50018300C33A6D /* Impact_Label.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Impact_Label.ttf; sourceTree = "<group>"; };
+		2792E92A1FB120110068D490 /* numtowordsconvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = numtowordsconvert.swift; path = "Font-Clock-2/Model/numtowordsconvert.swift"; sourceTree = SOURCE_ROOT; };
 		27AAEE791F51429100B8D526 /* GalagaImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalagaImg.swift; sourceTree = "<group>"; };
 		27C84F5A1F5A2DBB00AA382B /* NixieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NixieVC.swift; sourceTree = "<group>"; };
 		27D66A481F4F822300D287C5 /* Font-Clock-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Font-Clock-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				27FCB5161FB045AD00002FF6 /* BodyArtVC.swift */,
+				2792E92A1FB120110068D490 /* numtowordsconvert.swift */,
 				27D66A4D1F4F822300D287C5 /* ViewController.swift */,
 				27C84F5A1F5A2DBB00AA382B /* NixieVC.swift */,
 				2708C4BC1F50B6C100579F63 /* GalagaClock.swift */,
@@ -211,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27FCB51C1FB04A4100002FF6 /* MonsterVC.swift in Sources */,
+				2792E92B1FB120110068D490 /* numtowordsconvert.swift in Sources */,
 				27FCB5171FB045AD00002FF6 /* BodyArtVC.swift in Sources */,
 				27AAEE7A1F51429100B8D526 /* GalagaImg.swift in Sources */,
 				27E7866C1F7227D900B312E1 /* GlowLabel.swift in Sources */,

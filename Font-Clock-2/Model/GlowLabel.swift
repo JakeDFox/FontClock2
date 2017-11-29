@@ -26,4 +26,11 @@ class GlowLabel: UILabel {
         layer.shadowOffset = CGSize(width: 0, height: 0)
         layer.masksToBounds = false
     }
+    func glowWhite() {
+        layer.shadowColor = UIColor.green.cgColor
+        layer.shadowRadius = 3.0
+        layer.shadowOpacity = 0.9
+        layer.shadowOffset = CGSize(width: 0, height: 0)
+        layer.masksToBounds = false
+    }
 }

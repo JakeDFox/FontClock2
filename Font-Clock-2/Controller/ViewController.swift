@@ -33,7 +33,8 @@ class ViewController: UIViewController {
         timeFace.text = dateString as String
 
     }
-
+    
+    
 
     func setDateFace() {
         dateTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.setDateFace), userInfo: nil, repeats: false)
@@ -52,4 +53,3 @@ class ViewController: UIViewController {
         }
     }
 }
-
